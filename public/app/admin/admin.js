@@ -86,7 +86,7 @@ var Admin = function() {
                         $('#page-content').removeClass('inner-sidebar-left');
                     }
 
-                    context.$element().load("admin/" + $route,function(){
+                    context.$element().load("/" + $route,function(){
                         assignLinks('#/' + $route);
                         $('.tooltip').remove();
                         Helper.unblockPage();

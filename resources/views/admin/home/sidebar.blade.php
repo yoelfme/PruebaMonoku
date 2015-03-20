@@ -2,7 +2,7 @@
     <!-- Sidebar Brand -->
     <div id="sidebar-brand" class="themed-background">
         <a href="#" class="sidebar-title">
-           <!--  <i class="fa fa-cube"></i>  --><span class="sidebar-nav-mini-hide"><strong>URGE</strong></span>
+           <!--  <i class="fa fa-cube"></i>  --><span class="sidebar-nav-mini-hide"><strong>Monoku</strong></span>
         </a>
     </div>
     <!-- END Sidebar Brand -->
@@ -37,8 +37,8 @@
      <!-- Sidebar Extra Info -->
     <div id="sidebar-extra-info" class="sidebar-content sidebar-nav-mini-hide">
         <div class="text-center">
-            <small>Design in <i class="fa fa-heart text-danger"></i></small><br>
-                <a href="http://proyeccione.com" target="_blank"><img class="logoProyeccione" src="/img/proyeccione.svg"></a>
+            <small>Created with <i class="fa fa-heart text-danger"></i> by </small><br>
+                <a href="https://github.com/yoelfme" target="_blank">Yoel Monzon</a>
         </div>
     </div>
     <!-- END Sidebar Extra Info -->

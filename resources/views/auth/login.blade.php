@@ -33,7 +33,7 @@
                         </ul>
                     </div>
                 @endif
-                <form  role="form" method="POST" action="/admin/login" class="form-horizontal">
+                <form  role="form" method="POST" action="/login" class="form-horizontal">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="form-group">

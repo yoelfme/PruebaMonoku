@@ -1,5 +1,7 @@
 <?php namespace Monoku\Http\Controllers;
 
+use Monoku\Vendor\Helpers\MenuX;
+
 class HomeController extends Controller {
 
 	/*
@@ -30,7 +32,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+        $menu = MenuX::menu('menu');
+		return view('admin.home.home',compact('menu'));
 	}
 
 }
