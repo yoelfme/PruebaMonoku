@@ -99,7 +99,7 @@ var Admin = function() {
                 }
             });
 
-            $app.run('#/notices');
+            $app.run('#/users');
             App.datatables();
             Admin.form_password();
             window.$contenedor = Admin.$contenedor;

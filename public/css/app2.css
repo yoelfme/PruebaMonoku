@@ -1,0 +1,57 @@
+.file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.file-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.file-image-holder {
+    border: 1px dashed black;
+    border-radius: 5px;
+    height: 200px;
+    background: rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.file-image-holder-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    color: gray;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.relative {
+    position: relative !important;
+}

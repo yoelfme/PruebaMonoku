@@ -84,4 +84,9 @@ abstract class BaseRepo implements BaseInterface {
             ->with($this->relations)
             ->get();
     }
+
+    public function lists()
+    {
+        return $this->getModel()->orderBy('description','ASC')->lists('description','id');
+    }
 }

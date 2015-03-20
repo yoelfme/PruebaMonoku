@@ -13,6 +13,14 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::group(['prefix'=>'/','namespace'=>'API','middleware'=>'auth'],function(){
+    Route::resource('projects','ProjectsController');
+    Route::resource('sectors','SectorsController');
+    Route::resource('sources','SourcesController');
+    Route::resource('units','UnitsController');
+    Route::resource('users','UsersController');
+});
+
 Route::controllers([
 	'/' => 'Auth\AuthController',
 ]);

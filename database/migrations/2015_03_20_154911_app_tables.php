@@ -33,6 +33,8 @@ class AppTables extends Migration {
             $table->increments('id');
 
             $table->string('description');
+
+            $table->timestamps();
         });
 
         Schema::create('projects',function(Blueprint $table){

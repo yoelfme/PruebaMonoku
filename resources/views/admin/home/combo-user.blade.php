@@ -9,7 +9,7 @@
         </a>
     </li>
     <li>
-        <a href="admin/logout" class="logout">
+        <a href="/logout" class="logout">
             <i class="fa fa-power-off fa-fw pull-right"></i>
             Cerrar Sesion
         </a>

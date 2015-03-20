@@ -10,8 +10,12 @@
                 <div class="row">
                     <div class="col-sm-12 text-right">
                         @section('buttons')
-
-                            <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">@yield('button-create-text','Nuevo')</a>
+                            @if(\Auth::user()->type == "admin")
+                                <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">
+                                    <i class="fa fa-plus"></i>
+                                    @yield('button-create-text','Nuevo')
+                                </a>
+                            @endif
                         @show
                     </div>
                 </div>

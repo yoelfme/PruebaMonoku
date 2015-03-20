@@ -26,4 +26,6 @@ interface BaseInterface {
     public function getAll();
 
     public function getWithRelations();
+
+    public function lists();
 }
