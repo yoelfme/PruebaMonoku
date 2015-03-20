@@ -15,7 +15,7 @@ class UsersController extends CrudController {
     protected $rules = array(
         'email' => 'required|email',
         'name' => 'required',
-        'type' => 'required',
+        'type' => 'required|in:admin,user',
         'password' => 'required|min:6'
     );
     protected $module = '_users';
@@ -29,7 +29,7 @@ class UsersController extends CrudController {
     public function fields($data=null)
     {
         $type = [
-            'administrator' => 'Administrador',
+            'admin' => 'Administrador',
             'user' => 'Usuario Normal'
         ];
 

@@ -12,7 +12,7 @@ namespace Monoku\Models;
 class Project extends BaseModel {
     public $table ='projects';
     public $fillable = ['prog','subp','proy','subp2','rec','sit','description','year','appropriation_initial',
-                        'appropriation_in_force','liabilities','liabilities2','payments','id_source','id_sector','id_unit'];
+                        'appropriation_in_force','liabilities','liabilities2','payments','id_source','id_sector','id_unit','id_user'];
 
     public function source()
     {

@@ -30,11 +30,6 @@ class CrudController extends Controller {
     public function index(Request $request)
     {
         $data = $this->repo->getAll();
-//        if($request->ajax())
-//        {
-            return ['data'=>$data];
-//        }
-
 
         $fields = $this->fields();
 

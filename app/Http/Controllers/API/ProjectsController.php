@@ -63,6 +63,7 @@ class ProjectsController extends CrudController {
         {
 
             return FieldX::make()
+                ->hidden('id_user',$data->id_user)
                 ->input('prog','Programa:','Programa',$data->prog)
                 ->input('subp','Subprograma:','Subprograma',$data->subp)
                 ->input('proy','Proyecto:','Proyecto',$data->proy)
@@ -83,6 +84,7 @@ class ProjectsController extends CrudController {
         else
         {
             return FieldX::make()
+                ->hidden('id_user',\Auth::id())
                 ->input('prog','Programa:','Programa')
                 ->input('subp','Subprograma:','Subprograma')
                 ->input('proy','Proyecto:','Proyecto')

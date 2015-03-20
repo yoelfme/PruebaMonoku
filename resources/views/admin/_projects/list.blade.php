@@ -29,13 +29,13 @@
         <tr>
             <td class="text-center">{{ $key + 1 }}</td>
             <td>{{ $value->year }}</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>{{ $value->sector->description }}</td>
+            <td>{{ $value->unit->description }}</td>
+            <td>{{ $value->source->description }}</td>
+            <td>{{ $value->description }}</td>
+            <td>{{ $value->liabilities }}</td>
+            <td>{{ $value->liabilities2 }}</td>
+            <td>{{ $value->payments }}</td>
             <td class="text-center">
                 @if(\Auth::user()->type == "admin")
                     <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Editar" class="btn btn-effect-ripple btn-xs btn-success edit"><i class="fa fa-pencil"></i></a>
