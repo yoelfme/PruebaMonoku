@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Monoku
+        psr4_prefix: Monoku
+        src_path: app
